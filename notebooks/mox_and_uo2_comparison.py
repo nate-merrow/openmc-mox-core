@@ -258,7 +258,7 @@ mox_cell_filter = openmc.CellFilter(mox_fuel_cell)
 
 mox_fuel_tally = openmc.Tally(name='Pu239_fuel_reactions')
 mox_fuel_tally.filters = [mox_cell_filter]
-mox_fuel_tally.nuclides = ['Pu239']
+mox_fuel_tally.nuclides = ['Pu239','Pu240','Pu241']
 mox_fuel_tally.scores = ['total', 'fission', 'absorption', '(n,gamma)']
 
 flux_tally = openmc.Tally(name='flux')
@@ -268,7 +268,7 @@ flux_tally.scores = ['flux']
 rr_tally = openmc.Tally(name='reaction_rates')
 rr_tally.scores = ['fission', 'absorption']
 
-tallies = openmc.Tallies([uo2_fuel_tally, mox_fuel_tally, flux_tally, rr_tally])
+tallies = openmc.Tallies([uo2_fuel_tally, mox_fuel_tally, rr_tally, flux_tally])
 tallies.export_to_xml()
 
 ##############################################
