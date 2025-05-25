@@ -14,6 +14,21 @@
      Fission Rate                         0.35985 +/- 0.000436016
      Absorption Rate                      0.542324 +/- 0.00064368
      (n,gamma)                            0.182474 +/- 0.00022592
+   Pu240
+     Total Reaction Rate                  0.199709 +/- 0.000378823
+     Fission Rate                         0.00271389 +/- 2.68538e-06
+     Absorption Rate                      0.147521 +/- 0.000360887
+     (n,gamma)                            0.144807 +/- 0.000360837
+   Pu241
+     Total Reaction Rate                  0.11008 +/- 0.000122365
+     Fission Rate                         0.0710729 +/- 8.80798e-05
+     Absorption Rate                      0.0951635 +/- 0.0001188
+     (n,gamma)                            0.0240906 +/- 3.4539e-05
+ ====================>     TALLY 4: REACTION_RATES     <====================
+
+ Total Material
+   Fission Rate                         0.467372 +/- 0.000525331
+   Absorption Rate                      1.0017 +/- 0.000940887
  =========================>     TALLY 3: FLUX     <=========================
 
  Mesh Index (1, 1, 1)
@@ -15016,8 +15031,3 @@
  Mesh Index (50, 100, 1)
    Total Material
      Flux                                 0 +/- 0
- ====================>     TALLY 4: REACTION_RATES     <====================
-
- Total Material
-   Fission Rate                         0.467372 +/- 0.000525331
-   Absorption Rate                      1.0017 +/- 0.000940887
