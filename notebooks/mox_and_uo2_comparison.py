@@ -24,8 +24,11 @@ mox.add_nuclide('Pu240',0.020)
 mox.add_nuclide('Pu241',0.008)
 mox.set_density('g/cm3',10.4)
 
-zircaloy = openmc.Material(name='zircaloy')
-zircaloy.add_nuclide('Zr90',7.2758e-3)
+zircaloy = openmc.Material(name='zircaloy cladding')
+zircaloy.add_element('Zr',0.982)
+zircaloy.add_element('Sn',0.015)
+zircaloy.add_element('Fe',0.002)
+zircaloy.add_element('Cr',0.001)
 zircaloy.set_density('g/cm3',6.55)
 zircaloy.depletable = False
 
@@ -296,7 +299,7 @@ openmc.plot_geometry()
 openmc.run()
 
 ##############################################
-                # Post-Processing #
+              # Post-Processing #
 ##############################################
 
 import openmc
